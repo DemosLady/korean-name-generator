@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://korean-name-generator.vercel.app/sitemap.xml

@@ -10,12 +10,12 @@
   <meta name="description" content="Get your Korean name based on your real name and birthday. Plus: discover your K-Pop idol soulmate with our personality quiz. Free, instant, fun — share with friends!">
   <meta name="keywords" content="korean name generator, my korean name, get korean name, kpop boyfriend generator, kpop husband quiz, kpop soulmate, korean name from english, what is my korean name, kpop bias generator, korean name meaning, hangul name, kpop ideal type">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://korean-name-generator.vercel.app/">
+  <link rel="canonical" href="https://korean-name-generator-teal.vercel.app/">
   <meta property="og:title" content="Korean Name Generator & K-Pop Soulmate Quiz">
   <meta property="og:description" content="Get your Korean name + find your K-Pop idol soulmate. Free, instant, shareable!">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Korean Name Generator","description":"Generate your Korean name and discover your K-Pop idol soulmate.","url":"https://korean-name-generator.vercel.app/","applicationCategory":"EntertainmentApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"demosaii"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Korean Name Generator","description":"Generate your Korean name and discover your K-Pop idol soulmate.","url":"https://korean-name-generator-teal.vercel.app/","applicationCategory":"EntertainmentApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"author":{"@type":"Person","name":"demosaii"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I get a Korean name?","acceptedAnswer":{"@type":"Answer","text":"Enter your English name and birthday in our generator. We match syllable sounds, birth elements, and meanings to create an authentic Korean name with Hangul, romanization, and meaning."}},{"@type":"Question","name":"What is a K-Pop soulmate quiz?","acceptedAnswer":{"@type":"Answer","text":"Our K-Pop soulmate quiz asks personality questions and matches you with a K-Pop idol based on compatibility. It covers traits like humor, loyalty, creativity, and more."}},{"@type":"Question","name":"Are Korean names based on meaning?","acceptedAnswer":{"@type":"Answer","text":"Yes! Korean names use Hanja (Chinese characters) where each syllable carries meaning — like 지 (wisdom), 민 (clever), 서 (auspicious), 현 (bright). Our generator picks meaningful syllables that match your personality."}}]}</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7675527666098811" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -182,7 +182,7 @@
   <a href="https://word-scramble-roast.vercel.app/">🔥 Word Scramble</a>
   <a href="https://ai-pricing-calculator-rho.vercel.app/">🤖 AI API Calc</a>
   <a href="https://bmi-roast-machine.vercel.app/">⚖️ BMI Roast</a>
-  <a href="https://korean-name-generator.vercel.app/" class="cur">🌸 Korean Name</a>
+  <a href="https://korean-name-generator-teal.vercel.app/" class="cur">🌸 Korean Name</a>
 </nav>
 
 <header class="hdr">
@@ -432,7 +432,7 @@ function renderKpopStart(){
 
 function renderNameResult(){
   const n = S.nameData;
-  const shareText=`🌸 My Korean Name is ${n.kr} (${n.rom})!\nMeaning: ${n.meaning}\nhttps://korean-name-generator.vercel.app/`;
+  const shareText=`🌸 My Korean Name is ${n.kr} (${n.rom})!\nMeaning: ${n.meaning}\nhttps://korean-name-generator-teal.vercel.app/`;
   app.innerHTML=`<div class="card"><div class="name-result">
     <div style="font-size:11px;color:var(--pink);letter-spacing:4px;font-weight:600">YOUR KOREAN NAME</div>
     <div class="name-kr">${n.kr}</div>
@@ -501,13 +501,13 @@ function quizAnswer(v){
 }
 function shareName(){
   const n=S.nameData;
-  const t=`🌸 My Korean Name: ${n.kr} (${n.rom})\n${n.meaning}\nhttps://korean-name-generator.vercel.app/`;
+  const t=`🌸 My Korean Name: ${n.kr} (${n.rom})\n${n.meaning}\nhttps://korean-name-generator-teal.vercel.app/`;
   if(navigator.share)navigator.share({title:'My Korean Name',text:t});
   else if(navigator.clipboard){navigator.clipboard.writeText(t);alert('Copied! 🌸');}
 }
 function shareSoulmate(){
   const m=S.match;
-  const t=`💕 My K-Pop Soulmate: ${m.name} (${m.group})\n${m.pct}% Match! ${m.emoji}\nhttps://korean-name-generator.vercel.app/`;
+  const t=`💕 My K-Pop Soulmate: ${m.name} (${m.group})\n${m.pct}% Match! ${m.emoji}\nhttps://korean-name-generator-teal.vercel.app/`;
   if(navigator.share)navigator.share({title:'K-Pop Soulmate',text:t});
   else if(navigator.clipboard){navigator.clipboard.writeText(t);alert('Copied! 💕');}
 }
